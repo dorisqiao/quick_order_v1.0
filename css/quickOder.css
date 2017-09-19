@@ -1,0 +1,60 @@
+*{
+    font-family: 'microsoft Yahei';
+}
+body{
+    position:relative;
+    overflow-x:hidden;
+    margin-top:50px;
+    font-size: 62.5%;
+}
+a,a:hover,a:active,a:visited{
+    text-decoration: none;
+}
+p,span,div,.btn,input{
+    font-size: 1.6rem;
+}
+.page{
+    transition:all .15s linear;
+    position:absolute;
+    width:100%;
+}
+/*即将离开的ng-view动画开始时的样式*/
+.page.ng-leave{
+    /*left:0;*/
+    opacity: 1;
+}
+/*即将离开的ng-view动画结束时的样式*/
+.page.ng-leave.ng-leave-active{
+    /*left:-100%;*/
+    opacity:0;
+}
+/*即将要进入的ng-view动画开始时的样式*/
+.page.ng-enter{
+    /*left:100%;*/
+    opacity:0;
+}
+/*即将要进入的ng-view动画结束时的样式*/
+.page.ng-enter.ng-leave-active{
+    /*left:0;*/
+    opacity:1;
+}
+
+.navbar-footer-manu{
+    list-style: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+.navbar-footer-manu li{
+    float:left;
+    width:50%;
+    text-align: center;
+    cursor: pointer;
+}
+.navbar-footer-manu li a{
+    line-height:50px;
+    display:block;
+}
+.navbar-footer-manu li:hover{
+    background:#ddd;
+}
